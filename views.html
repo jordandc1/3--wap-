@@ -60,7 +60,7 @@ margin: -1px;
 <input id="currSkuId" value="" type="hidden"/>
 <div class="container">
     <div class="row white-bg">
-        <div id="slide"> 
+        <div id="slide">
             <div class="hd">
                 <ul>
                 	<li>1</li></ul>
@@ -103,7 +103,7 @@ margin: -1px;
 			</ul>
 		</div>
         <div id="goodsContent" class="goods-content white-bg">
-			
+
             <div class="hd hd_fav">
                 <ul>
                     <li class="on">图文详情</li>
@@ -111,7 +111,7 @@ margin: -1px;
                     <li class="">评价(0)</li>
                 </ul>
             </div>
-			
+
             <div class="tempWrap" style="overflow:hidden; position:relative;">
             <div style="width: 2304px; position: relative; overflow: hidden; padding: 0px; margin: 0px; transition-duration: 200ms; transform: translateX(0px);" class="bd">
                 <ul style="display: table-cell; vertical-align: top; max-width: 768px;width: 100%;" class="property">
@@ -169,7 +169,7 @@ margin: -1px;
 		</a>
 		<a href="shopcart.html">
 			<i class="navIcon shop"></i>
-			<span class="text">购物车</span>		
+			<span class="text">购物车</span>
 		</a>
 		<a href="userhome.html">
 			<i class="navIcon member"></i>
@@ -209,14 +209,14 @@ TouchSlide({
 		var prodId = $("#prodId").val();
 		if(i==1){//规格参数
 			var th = jQuery("#goodsContent .bd ul").eq(i);
-			if(!th.hasClass('hadGoodsContent')){				
+			if(!th.hasClass('hadGoodsContent')){
 				queryParameter(th,prodId);
 			}
 
 			if($(window).scrollTop() > scrollTop){
 				$(window).scrollTop(scrollTop);
 			}
-				
+
 		}else if(i==2){//评价
 			var th = jQuery("#goodsContent .bd ul").eq(i);
 
@@ -232,7 +232,7 @@ TouchSlide({
 				$(window).scrollTop(scrollTop);
 				var hd_fav = $('.hd_fav');
 				var position = hd_fav.position();
-				
+
 				scrollTop = position.top;
 			}
 		}
